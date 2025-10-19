@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clínica Mentum</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: white;
+  color: black;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 40px;
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.logo {
+  height: 60px;
+  width: auto;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #6c63ff;
+}
+
+/* Banner */
+.banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 40px;
+}
+
+section.sobre {
+  max-width: 1400px;
+  margin: 4rem auto;
+  padding: 2rem;
+}
+
+.sobre-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.sobre-foto {
+  flex: 1 1 350px;
+  text-align: center;
+}
+
+.sobre-foto img {
+  width: 80%;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.sobre-texto {
+  flex: 1 1 400px;
+}
+
+.sobre-texto h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #4AAFC5;
+}
+
+.sobre-texto p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: black;
+}
+
+/* ======== VALORES ======== */
+.valores {
+  width: 100%;
+  background: linear-gradient(135deg, #6D6BD0 0%, #8D16E0 100%);
+  color: white;
+  max-width: 1200px;
+  padding: 3rem 2rem;
+  border-radius: 12px;
+  margin: 4rem auto;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.valores h2 {
+  text-align: left;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.valores ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.valores li {
+  background: rgba(255,255,255,0.15);
+  padding: 12px 16px;
+  border-radius: 10px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  backdrop-filter: blur(4px);
+}
+
+.valores li::before {
+  content: "•";
+  margin-right: 10px;
+  opacity: 0.9;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .valores ul {
+    grid-template-columns: 1fr;
+  }
+}
+.servicos {
+    padding: 80px 10%;
+    background-color: #f9f9fb;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .titulo-servicos {
+    font-size: 2.2rem;
+    color: #2d2d2d;
+    margin-bottom: 50px;
+    font-weight: 600;
+  }
+
+  .cards-servicos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+
+  .card {
+    background: #fff;
+	border: 2px solid #59D58E;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 25px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+
+  .img-servico img {
+    width: 50%;
+    height: 200px;
+    border-radius: 15px;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+
+  .card h3 {
+    font-size: 1.2rem;
+    color: #1e1e1e;
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+
+  .card p {
+    font-size: 0.95rem;
+    color: #555;
+  }
+
+  /* Responsivo */
+  @media (max-width: 768px) {
+    .cards-servicos {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+/* Footer */
+footer {
+  background-color: #59D58E;
+  color: white;
+  text-align: center;
+  padding: 25px 10px;
+  margin-top: 40px;
+}
+
+footer p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+</style>
+
+<header>
+  <img src="logo.png" alt="Logo da Empresa" class="logo">
+  <nav>
+    <ul>
+      <li><a href="#inicio">Início</a></li>
+      <li><a href="https://wa.me/5512992612496">Agende sua consulta</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="banner">
+  <img src="hero.png" alt="Banner Clínica Mentum">
+</section>
+
+<section class="sobre">
+  <div class="sobre-container">
+    <div class="sobre-foto">
+      <img src="sobre.png" alt="Profissionais da Clínica Mentum" loading="lazy">
+    </div>
+    <div class="sobre-texto">
+      <h2>Quem somos</h2>
+      <p>
+        Irmãos, Graziele e Antônio Santos são especializados em diversos serviços relacionados
+        a promover o autoconhecimento, o desenvolvimento humano e a tomada de decisões conscientes
+        por meio de avaliações psicológicas e neuropsicológicas éticas, precisas e humanizadas,
+        contribuindo para o bem-estar emocional, o desempenho profissional e a qualidade de vida
+        de nossos clientes.
+        <br><br>
+        A Clínica Mentum foi inaugurada em XXXX e buscamos ser referência regional em avaliação psicológica
+        e neuropsicológica, reconhecida pela excelência técnica, compromisso ético e impacto positivo
+        no desenvolvimento de pessoas, organizações e crianças com transtornos do neurodesenvolvimento.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ======== CONTAINER DE VALORES ======== -->
+<section class="valores">
+  <h2>Nossos Valores</h2>
+  <ul>
+    <li>Empatia</li>
+    <li>Ética</li>
+    <li>Sigilo</li>
+    <li>Profissionalismo</li>
+    <li>Escuta ativa</li>
+    <li>Responsabilidade</li>
+    <li>Desenvolvimento</li>
+    <li>Acolhimento</li>
+    <li>Humanização</li>
+  </ul>
+</section>
+
+  <div class="cards-servicos">
+    <div class="card">
+      <div class="img-servico">
+        <img src="neuro.png" alt="Avaliação Neuropsicológica Infantil">
+      </div>
+      <h3>Avaliação Neuropsicológica</h3>
+      <p>Identificação e compreensão de dificuldades cognitivas e comportamentais.</p>
+    </div>
+
+    <div class="card">
+      <div class="img-servico">
+        <img src="mala.png" alt="Avaliação Psicológica Corporativa">
+      </div>
+      <h3>Avaliação Psicológica Corporativa</h3>
+      <p>Seleção e desenvolvimento de profissionais com base em competências psicológicas.</p>
+    </div>
+
+    <div class="card">
+      <div class="img-servico">
+        <img src="nr1.png" alt="Avaliação de Riscos Psicossociais (MRU)">
+      </div>
+      <h3>Avaliação de Riscos Psicossociais (NR-1)</h3>
+      <p>Mapeamento dos fatores psicossociais que afetam o bem-estar no ambiente de trabalho e acompanhaqmento contínuo.</p>
+    </div>
+  </div>
+</section>
+<footer>
+  <p>© 2025 Clínica Mentum. Todos os direitos reservados.</p>
+</footer>
+
+</body>
+</html>
